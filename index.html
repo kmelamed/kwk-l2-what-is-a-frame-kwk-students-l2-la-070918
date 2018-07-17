@@ -4,15 +4,26 @@
   </head>
 
   <body>
-
+  <div>
     <a-scene>
-      <a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>
-      <a-torus-knot position="0 2.5 -5"radius-inner="1" radius-outer="2" color="yellow"></a-torus-knot>
-      <a-plane position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" color="#7BC8A4"></a-plane>
-      <a-cylinder position="1 0.75 -3" radius="0.25" height="1" color="#F88"></a-cylinder>
-      <a-sky color="#99f"></a-sky>
+      <a-entity camera look-controls wasd-constros position="3 2 8"></a-entity>
+      <a-plane position="5.5 0 -3.5" rotation="-90 0 0" width="20" height="10" color="green"></a-plane>
+      <a-sphere id="#head" radius = ".4" position="0 2.94 -3.5"></a-sphere>
+      <a-cylinder id="#torso" radius = ".5" position="0 2 -3.5"></a-cylinder>
+      <a-cylinder id="arm1" radius = ".1" position ="-.7 1.9 -3.5" height="1.2" rotation="0 0 -15"></a-cylinder>
+      <a-cylinder id="arm2" radius = ".1" position =".7 1.9 -3.5" height="1.2" rotation="0 0 15"></a-cylinder>
+      <a-cylinder id="leg1" radius = ".2" position ="-.3 1 -3.5" height="1.2" ></a-cylinder>
+      <a-cylinder id="leg2" radius = ".2" position =".3 1 -3.5" height="1.2" ></a-cylinder>
+      <a-box id="castlemid" position="9 2 -4" height="4" width="5.5" depth="4" color="tan"></a-box>
+      <a-cylinder id="castleleft" position="5.5 3 -4.25" height="6" color="brown"></a-cylinder>
+       <a-cylinder id="castleright" position="12.5 3 -4.25" height="6" color="brown"></a-cylinder>
+       <a-cylinder id="castlemidcol" position="9 3 -4.25" height="6.5" color="brown"></a-cylinder>
+       <a-cone id="cone" position="9 7 -4.25" height="2" radius-bottom="1.5" color="#937c49"></a-cone>
+       <a-cylinder id="catbody" rotation="90 90 0" radius=".2" height="1" position="2.5 1 0"></a-cylinder>
+       <a-sphere id="cathead" radius=".2" position="1.8 1 0"></a-sphere>
+      <a-sky color="lightblue"></a-sky>
     </a-scene>
-
+  </div>
   </body>
 
 </html>
